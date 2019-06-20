@@ -1,0 +1,22 @@
+{
+  "name": "Nexmo Passwordless Login - Rails 6",
+  "description": "A passwordless login authentication system implemented in Rails 6 - using Nexmo SMS APIs",
+  "repository": "https://github.com/nexmo-community/passwordless-login-rails",
+  "logo": "https://www.nexmo.com/wp-content/uploads/2016/04/Nexmo_O.png",
+  "keywords": ["nexmo", "nexmo client sdk", "ruby on rails"],
+  "website": "https://developer.nexmo.com",
+  "env": {
+    "NEXMO_API_KEY": {
+      "description": "Your Nexmo API Key",
+      "required": true
+    },
+    "NEXMO_API_SECRET": {
+      "description": "Your Nexmo API Secret",
+      "required": true
+    }
+  },
+  "scripts": {
+    "postdeploy": "bundle exec rails db:migrate"
+  },
+  "success_url": "/"
+}
