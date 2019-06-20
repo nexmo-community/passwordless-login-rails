@@ -1,0 +1,32 @@
+<div class="row justify-content-center mt-5">
+  <div class="col-10 col-sm-8 col-md-6 col-lg-5 col-xl-4 text-center">
+
+    <%= image_tag "nexmo.png", height: 50, class: 'mb-4' %>
+    <%= render :partial => 'layouts/flashes' %>
+
+    <%= form_tag login_do_path, :class => 'auth' do %>
+    <div class="card">
+      <div class="card-body">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text">
+              <i class="fas fa-mobile-alt"></i>
+            </span>
+          </div>
+          <div class="input-group-prepend"><span class="input-group-text" style="background-color: transparent; border-right: 0px;">+</span></div>
+          <input type="tel" name="msisdn" id="msisdn" class="form-control" placeholder="Phone number" style="border-left: 0px;">
+        </div>
+
+        <div class="row" style="margin-top: 20px;">
+          <div class="col-12 text-center">
+            <button type="submit" class="btn btn-lg btn-primary col-12" id="submit"> Log in</button>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <% end %>
+
+  </div>
+</div>
