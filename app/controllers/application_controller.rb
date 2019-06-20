@@ -2,7 +2,7 @@ class ApplicationController < ActionController::Base
 
   def find_user_if_present
     @current_session = Session.find_by(session_token: session[:token]) if session[:token]
-    @current_user = @current_session.user unless @current_session
+    @current_user = @current_session.user unless @current_session.blank?
   end
   
   def authenticate_user!
