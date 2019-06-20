@@ -8,6 +8,9 @@ A passwordless login authentication system implemented in Rails 6. Uses phone nu
 * PostgreSQL
 
 
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
+
 ## Setup
 
 * if you don't already have one, sign up for a Nexmo account
